@@ -3,3 +3,4 @@ llm/
 __pycache__/
 test.ipynb
 debug.log
+.env
