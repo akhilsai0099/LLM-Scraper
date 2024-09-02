@@ -22,7 +22,6 @@ def scrape(req:HistoryRequest):
 	html = scrapeWeb(req.url)
 	body = extract_body_content(html)
 	clean_body = clean_body_content(body)
-	print(clean_body)
 	# db = SessionLocal()
 	# scrape_history = ScrapeHistory(url=req.url)
 	# db.add(scrape_history)
