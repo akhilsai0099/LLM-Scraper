@@ -1,14 +1,17 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+import time
 def scrapeWeb(url):
 	print("Launching Chrome")
 	options = webdriver.ChromeOptions()
 	options.add_argument('--headless=new')
 	chromeDriverPath= './chromedriver.exe'
+	# chromeDriverPath= ''
 	driver = webdriver.Chrome(service=Service(chromeDriverPath),options=options)
 	try:
 		driver.get(url)
+		time.sleep(10)
 		html = driver.page_source
 		print("Grabbed Page")
 		return html

@@ -17,6 +17,8 @@ template = """
 			2. **No Extra Content** Do not include any extra text, comments, explanations in your responses.
 			3. **Empty Response** If no information matches the given description return an empty string ('').
 			4. **Direct Data Only** Your output should contain only the data that is explicitly requested, with no other text.
+			5. **Seperate with commas** If multiple questions are asked, seperate the answers with a comma.
+			6. **Generate a MarkDown Table** If asked to give in a table give the answers using a markdown table ONLY WHEN ASKED.
 """
 
 
