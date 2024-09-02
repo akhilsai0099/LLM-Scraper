@@ -8,7 +8,7 @@ conn = st.connection('postgresql', type='sql')
 query = conn.query('select * from scraping_history')
 
 
-for idx, url in query.itertuples():
+for *idx, url in query.itertuples():
 	st.text(url)
 
 url = st.text_input("Enter a Website URL")
