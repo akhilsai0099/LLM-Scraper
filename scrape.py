@@ -6,7 +6,7 @@ def scrapeWeb(url):
 	print("Launching Chrome")
 	options = webdriver.ChromeOptions()
 	options.add_argument('--headless=new')
-	chromeDriverPath= './chromedriver'
+	chromeDriverPath= './chromedriver.exe'
 	# chromeDriverPath= ''
 	driver = webdriver.Chrome(service=Service(chromeDriverPath),options=options)
 	try:
