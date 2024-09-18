@@ -5,3 +5,5 @@ test.ipynb
 debug.log
 .env
 **/secrets.toml
+.secrets
+act.exe
